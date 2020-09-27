@@ -34,7 +34,11 @@ void main() {
     FileStat fileStat = darDD.statSync();
     if (fileStat.size > 0) {
       print("$dd size: ${fileStat}");
-      darDD.deleteSync(recursive: true);
+      try {
+        darDD.deleteSync(recursive: true);
+      } catch (e) {
+        print("$e");
+      }
     } else {
       List<FileSystemEntity> llFS = darDD.listSync(recursive: true, followLinks: false);
       for (var fs in llFS) {
