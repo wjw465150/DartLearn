@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DartLearn.iml" filepath="$PROJECT_DIR$/DartLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../student/student.iml" filepath="$PROJECT_DIR$/../student/student.iml" />
     </modules>
   </component>
 </project>
